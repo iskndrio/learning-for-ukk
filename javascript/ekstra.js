@@ -14,7 +14,7 @@ const ekstrakulikuler = [
   { name: "Futsal", img: "ekstra/futsal.CyJOdm1z.png"},
   { name: "Basket", img: "ekstra/basket.png"},
   { name: "Voli", img: "ekstra/volly.jpeg"},
-  { name: "Sepak Bola", img: "ekstra/sepakbola.jpeg"},
+  { name: "Sepak Bola", img: "ekstra/sepakbola.jpeg"},  
   { name: "Seni", img: "ekstra/osis.png"},
 ];
 
@@ -24,13 +24,13 @@ ekstrakulikuler.forEach((item) => {
   const marginClass = item.marginY ? "my-5" : "";
 
   const cardHTML = `
-     <div class="col-lg-4 ${marginClass}">
+     <div class="col-lg-2 ${marginClass}">
         <div class="card shadow">
           <div class="card-header text-center">
-            <img src="${item.img}" alt="${item.name}" style="width: 200px;">
+            <img src="${item.img}" alt="${item.name}" style="width: 100px;">
           </div>
           <div class="card-body text-center">
-            <h3>${item.name}</h3>
+            <p>${item.name}</p>
           </div>
         </div>
     </div>
