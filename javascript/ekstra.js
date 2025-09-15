@@ -28,7 +28,7 @@ function renderEkstrakulikuler(data) {
   const marginClass = item.marginY === false ? "" : "";
 
   const cardHTML = `
-     <div class="col-lg-2 my-3 ${marginClass}">
+     <div class="col-lg-3 my-3 ${marginClass}">
         <div class="card shadow">
           <div class="card-header text-center">
             <img src="${item.img}" alt="${item.name}" style="width: 100px;">
