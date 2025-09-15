@@ -19,12 +19,16 @@ const ekstrakulikuler = [
 ];
 
 const container = document.getElementById("ekstra-container");
+const searchInput = document.getElementById("searchInput");
 
-ekstrakulikuler.forEach((item) => {
-  const marginClass = item.marginY ? "my-5" : "";
+function renderEkstrakulikuler(data) {
+  container.innerHTML = "";
+
+  data.forEach((item) => {
+  const marginClass = item.marginY === false ? "" : "";
 
   const cardHTML = `
-     <div class="col-lg-2 ${marginClass}">
+     <div class="col-lg-2 my-3 ${marginClass}">
         <div class="card shadow">
           <div class="card-header text-center">
             <img src="${item.img}" alt="${item.name}" style="width: 100px;">
@@ -38,3 +42,21 @@ ekstrakulikuler.forEach((item) => {
 
   container.insertAdjacentHTML("beforeend", cardHTML);
 });
+}
+
+renderEkstrakulikuler(ekstrakulikuler);
+
+searchInput.addEventListener("input", function() {
+  const keyword = this.value.toLowerCase();
+
+  const filltered = ekstrakulikuler.filter(item => 
+    item.name.toLowerCase().includes(keyword)
+  );
+
+  if (filltered.length === 0) {
+      container.innerHTML = `<h4 class="text-center my-3">😪Ekstrakulikuler tidak ada😮‍💨</h4>`;
+  }else {
+    renderEkstrakulikuler(filltered);
+  }s
+});
+
