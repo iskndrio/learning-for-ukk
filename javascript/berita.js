@@ -9,7 +9,7 @@ ekstrakulikuler.forEach((item) => {
   const marginClass = item.marginY ? "my-5" : "";
 
   const cardHTML = `
-  <div class="row align-items-center ${marginClass}">
+  <div class="row align-items-center my-5 ${marginClass}">
         <div class="col-md-6 text-center mb-3">
           <img src="${item.img}" alt="${item.name}" class="rounded img-fluid" style="max-width: 500px"/>
         </div>
@@ -22,4 +22,3 @@ ekstrakulikuler.forEach((item) => {
 
   container.insertAdjacentHTML("beforeend", cardHTML);
 });
-  
