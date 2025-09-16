@@ -54,7 +54,7 @@ searchInput.addEventListener("input", function() {
   );
 
   if (filltered.length === 0) {
-      container.innerHTML = `<h4 class="text-center my-3">😪Ekstrakulikuler tidak ada😮‍💨</h4>`;
+      container.innerHTML = `<h4 class="text-center my-3">😪Ekstrakulikuler NotFound😮‍💨</h4>`;
   }else {
     renderEkstrakulikuler(filltered);
   }s
