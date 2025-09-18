@@ -1,20 +1,18 @@
-function animateCounter(el, target, duration = 1000) {
-  let start = 0;
-  const stepTime = Math.abs(Math.floor(duration / target));
-  const timer = setInterval(() => {
-    start += 1;
-    el.textContent = start;
-    if (start >= target) {
-      clearInterval(timer);
-      el.textContent = target;
-    }
-  }, stepTime);
-}
-
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const counters = document.querySelectorAll('.count');
   counters.forEach((counter) => {
-    const target = parseInt(counter.getAttribute('data-count'));
-    animateCounter(counter, target);
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-count');
+      const count = +counter.innerText;
+      const increment = target / 100;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
   });
 });

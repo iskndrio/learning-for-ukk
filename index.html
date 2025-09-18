@@ -65,16 +65,21 @@
     </nav>
 
     <!-- Hero -->
-    <div class="container-fluid" id="beranda">
-      <div class="card position-relative text-white rounded-3 border-0 overflow-hidden my-3" style="max-height: 650px">
-        <img src="foto/lobby.jpg" class="card-img img-fluid" alt="Gambar" style="max-height: 650px; object-fit: cover" />
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
-        <div class="card-img-overlay d-flex flex-column justify-content-end ms-3 mb-5">
-          <div class="rounded-3 text-center p-4" style="max-width: 600px; margin: 0 auto">
-            <img src="foto/logo.png " alt="" class="w-50 mb-5 mx-auto">
-            <h1 class="text-white mb-0">
-              <strong>SMKN 4 Tasikmalaya <br /> <span class="text-primary">Sekolah Pusat Keunggulan</span> </strong>
-            </h1>
+    <div class="card position-relative text-white rounded-3 border-0 overflow-hidden my-3 fade-in" style="max-height: 650px">
+      <div class="container-fluid" id="beranda">
+        <div class="card position-relative text-white rounded-3 border-0 overflow-hidden my-3" style="max-height: 650px">
+          <img src="foto/lobby.jpg" class="card-img img-fluid" alt="Gambar" style="max-height: 650px; object-fit: cover" />
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <div class="card-img-overlay d-flex flex-column justify-content-end ms-3 mb-5">
+            <div class="rounded-3 text-center p-4" style="max-width: 600px; margin: 0 auto">
+              <img src="foto/logo.png " alt="" class="w-50 mb-5 mx-auto" />
+              <h1 class="text-white mb-0">
+                <strong
+                  >SMKN 4 Tasikmalaya <br />
+                  <span class="text-primary">Sekolah Pusat Keunggulan</span>
+                </strong>
+              </h1>
+            </div>
           </div>
         </div>
       </div>
@@ -106,11 +111,12 @@
     </div>
 
     <!-- Statistik -->
-    <div class="container-fluid my-5 bg-primary">
+    <div class="container rounded-4 my-5 bg-primary py-2">
       <div class="row g-3">
         <div class="col-6 col-md-3">
           <div class="card text-center border-0 bg-primary text-white">
             <div class="card-body">
+              <i class="fa-solid fa-graduation-cap fa-2x"></i>
               <h1><b class="count" data-count="1500">0</b></h1>
               Siswa
             </div>
@@ -119,6 +125,7 @@
         <div class="col-6 col-md-3">
           <div class="card text-center border-0 bg-primary text-white">
             <div class="card-body">
+              <i class="fa-solid fa-chalkboard-user fa-2x"></i>
               <h1><b class="count" data-count="100">0</b></h1>
               Pendidik
             </div>
@@ -127,14 +134,16 @@
         <div class="col-6 col-md-3">
           <div class="card text-center border-0 bg-primary text-white">
             <div class="card-body">
+              <i class="fa-solid fa-book-tanakh fa-2x"></i>
               <h1><b class="count" data-count="5">0</b></h1>
-              Program Keahlian
+              <a href="#jurusan" class="text-white text-decoration-none">Program Keahlian</a>
             </div>
           </div>
         </div>
         <div class="col-6 col-md-3">
           <div class="card text-center border-0 bg-primary text-white">
             <div class="card-body">
+              <i class="fa-solid fa-landmark fa-2x"></i>
               <h1><b class="count" data-count="45">0</b></h1>
               Rombel
             </div>
@@ -191,7 +200,7 @@
     </div>
 
     <!-- Program Keahlian -->
-    <div class="container my-5">
+    <div class="container my-5" id="jurusan">
       <h1 class="text-center"><b>Program Keahlian</b></h1>
       <p class="text-center">Program keahlian yang ada di SMKN 4 Tasikmalaya</p>
       <div class="row g-4 mt-4">
