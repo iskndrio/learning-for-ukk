@@ -19,12 +19,8 @@ const ekstrakulikuler = [
 ];
 
 const container = document.getElementById("ekstra-container");
-const searchInput = document.getElementById("searchInput");
 
-function renderEkstrakulikuler(data) {
-  container.innerHTML = "";
-
-  data.forEach((item) => {
+  ekstrakulikuler.forEach((item) => {
   const marginClass = item.marginY === false ? "" : "";
 
   const cardHTML = `
@@ -42,21 +38,5 @@ function renderEkstrakulikuler(data) {
 
   container.insertAdjacentHTML("beforeend", cardHTML);
 });
-}
 
-renderEkstrakulikuler(ekstrakulikuler);
-
-searchInput.addEventListener("input", function() {
-  const keyword = this.value.toLowerCase();
-
-  const filltered = ekstrakulikuler.filter(item => 
-    item.name.toLowerCase().includes(keyword)
-  );
-
-  if (filltered.length === 0) {
-      container.innerHTML = `<h4 class="text-center my-3">😪Ekstrakulikuler NotFound😮‍💨</h4>`;
-  }else {
-    renderEkstrakulikuler(filltered);
-  }s
-});
 
