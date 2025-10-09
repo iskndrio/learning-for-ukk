@@ -16,3 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCount();
   });
 });
+
+function showBerita() {
+Swal.fire("Selamat Datang di Berita SMKN 4 Tasikmalaya!").then(() => {
+  window.location.href = "../berita.html";
+});
+};
+function showGaleri() {
+Swal.fire("Selamat Datang di Galeri SMKN 4 Tasikmalaya!").then(() => {
+  window.location.href = "../galery.html";
+});
+};
+
