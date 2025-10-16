@@ -14,7 +14,7 @@ berita.forEach((item) => {
   <img src="${item.img}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${item.title}</h5>
-    <p class="card-text">${item.text}</p>
+    <p class="card-text" style="text-align: justify;">${item.text}</p>
   </div>
 </div>
     `;
