@@ -28,33 +28,7 @@
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top border border-1 shadow-sm backdrop-blur">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="foto/logo.png" alt="" width="30" class="me-2 img-fluid" />
-          <span class="fw-bold">SMKN 4 Tasikmalaya</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="profil.html">Profil</a></li>
-                <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
-                <li><a class="dropdown-item" href="visimisi.html">Visi & Misi</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="ekstra.html">Ekstrakulikuler</a></li>
-            <li class="nav-item"><a class="nav-link" href="galery.html">Galeri</a></li>
-            <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+     <div data-include="../components/navbar.html"></div>
 
   <div class="container my-5" style="width: 100%;">
     <div class="container identitas bg-white rounded shadow">
@@ -115,6 +89,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="../javascript/include.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
